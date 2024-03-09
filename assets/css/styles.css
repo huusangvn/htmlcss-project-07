@@ -1,0 +1,292 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-word-color: #696d76;
+  --primary-color: #7264d6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.inner {
+  background: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Common */
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--primary-word-color);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 113px;
+  height: 52px;
+  border-radius: 6px;
+  background: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #fff;
+}
+
+.section-desc {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--primary-word-color);
+}
+/* Header */
+.header {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.header .row {
+  align-items: center;
+}
+
+.nav-bar {
+  margin-left: 70px;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__item {
+  margin-right: 47px;
+}
+
+.nav__item.active {
+  position: relative;
+  font-weight: 600;
+  color: #212832;
+}
+
+.nav__item.active::after {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 47px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: var(--primary-color);
+}
+
+.cta__hero {
+  margin-left: auto;
+}
+
+.login {
+  margin-right: 28px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 28px;
+  color: #212832;
+}
+
+/* 000--Hero--000 */
+.hero {
+  width: 100%;
+  margin-top: 76px;
+}
+
+.hero .row {
+  align-items: center;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--primary-word-color);
+}
+
+.sub-title::before {
+  margin-right: 12px;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: var(--primary-word-color);
+}
+
+.primary-title {
+  max-width: 500px;
+  margin-top: 12px;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.primary-title > span {
+  color: var(--primary-color);
+}
+
+.hero-desc {
+  margin-top: 20px;
+  max-width: 540px;
+}
+
+.form__request {
+  position: relative;
+  max-width: 540px;
+
+  margin-top: 20px;
+}
+
+.request-input {
+  width: 100%;
+  height: 74px;
+  padding: 23px;
+  padding-bottom: 23px;
+  border-radius: 8px;
+  box-shadow: 0px 16px 42px 0px #00000012;
+}
+
+.request-input::placeholder {
+  margin-right: 200px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--primary-word-color);
+}
+
+.request-btn {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  min-width: 149px;
+  height: 58px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-hero {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--primary-word-color);
+}
+
+/* Hero-image */
+.hero__image {
+  position: relative;
+}
+
+.circle-hero {
+  position: absolute;
+  top: 127px;
+  right: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  text-align: center;
+  background: #da6464;
+}
+
+.percent {
+  padding-top: 29px;
+  font-size: 4.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.sub-percent {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+}
+
+.square {
+  position: absolute;
+  right: 100px;
+  bottom: 61px;
+  max-width: 124px;
+  background: #439f90;
+  border-radius: 10px;
+}
+
+.square .row {
+  padding: 20px 15px 21px 14px;
+}
+
+.icon-dollar {
+  margin-right: 11px;
+}
+.dollar {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.sub-money {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 8px;
+  color: #fff;
+}
+
+.square-download {
+  position: absolute;
+  top: 113px;
+  left: -100px;
+  max-width: 174px;
+  box-shadow: 0px 10px 20px 0px #00000012;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.square-download .row {
+  padding: 14px 10px;
+}
+
+.sub-down {
+  margin-left: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 14px;
+  color: #31456a;
+}
+.number-down {
+  margin-left: 18px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 14px;
+  color: #4ab5e3;
+}
