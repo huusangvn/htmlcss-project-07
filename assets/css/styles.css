@@ -7,6 +7,7 @@
 :root {
   --primary-word-color: #696d76;
   --primary-color: #7264d6;
+  --primary-content: #212832;
 }
 
 html {
@@ -50,6 +51,42 @@ a {
   font-weight: 600;
   line-height: 28px;
   color: #fff;
+}
+
+.sub-heading,
+.sub-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--primary-word-color);
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+}
+
+.sub-heading::before {
+  margin-right: 12px;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background: var(--primary-word-color);
+}
+
+.section-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--primary-content);
+}
+
+.topic {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--primary-content);
 }
 
 .section-desc {
@@ -289,4 +326,377 @@ a {
   font-weight: 400;
   line-height: 14px;
   color: #4ab5e3;
+}
+
+/* 000__work__000 */
+.work {
+  margin-top: 160px;
+}
+
+.worl .row {
+  align-items: center;
+}
+
+.work__image {
+  position: relative;
+}
+
+.img-work {
+  width: 456px;
+  height: 619px;
+  object-fit: cover;
+}
+
+.bg-work {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* work__content */
+.work-heading {
+  margin-top: 12px;
+}
+
+.topic-top {
+  margin-top: 70px;
+}
+
+.work-desc {
+  margin-top: 12px;
+}
+
+.topic:not(.topic-top) {
+  margin-top: 30px;
+}
+
+/* 000__Card__000 */
+.card {
+  margin-top: 160px;
+}
+
+.card .row {
+  align-items: center;
+}
+
+.card-heading {
+  margin-top: 12px;
+}
+
+.card-desc {
+  margin-top: 20px;
+}
+
+.card-about-top {
+  margin-top: 28px;
+}
+
+.card-about {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--primary-content);
+  display: flex;
+  align-items: center;
+}
+
+.card-about + .card-about {
+  margin-top: 18px;
+}
+
+.card-about::before {
+  margin-right: 12px;
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.card-btn {
+  margin-top: 38px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-square {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  box-shadow: 0px 14px 38px 0px #00000012;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 276px;
+}
+
+.card-square .row {
+  padding: 23px 13px;
+}
+
+.card-fly-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.info-card .send {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--primary-content);
+}
+
+.pay,
+.date {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 12px;
+  color: var(--primary-word-color);
+}
+
+.number-card {
+  margin-left: 67px;
+  text-align: end;
+}
+
+.number-card {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.card-dollar {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #212832;
+}
+
+.around {
+  position: absolute;
+  right: 10px;
+  bottom: -65px;
+  min-width: 120px;
+  background: #439f90;
+  border-radius: 16px;
+}
+
+.aroud__inner {
+  padding: 15px;
+}
+
+.info-icon {
+  margin-top: 14px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 16px;
+  color: #fff;
+}
+
+.number-money {
+  margin-top: 6px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+/* Transfer */
+.transfer {
+  margin-top: 160px;
+}
+
+.transfer .row {
+  align-items: center;
+}
+
+.transfer__image {
+  position: relative;
+}
+
+.transfer__bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* client */
+.client {
+  margin-top: 160px;
+}
+
+.client__header {
+  width: 435px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client__sub-heading {
+  display: inline-flex;
+}
+
+.clients__section-heading {
+  margin-top: 12px;
+}
+
+.client__section-desc {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.div {
+  position: absolute;
+  width: 60px;
+  height: 40px;
+
+  rotate: 180deg;
+  box-shadow: 0px 22px 54px 0px #00000012;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* blog */
+.blog {
+  margin-top: 160px;
+}
+.blog .row {
+  align-items: center;
+}
+
+.blog__heading {
+  margin-top: 6px;
+}
+
+.blog__desc {
+  margin-top: 18px;
+}
+
+.item__inner {
+  margin-top: 30px;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 20px 50px 0px #00000012;
+  border-radius: 12px;
+}
+
+.blog-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.info__blog-item {
+  margin-left: 22px;
+}
+
+.item-date {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-word-color);
+}
+
+.item-desc {
+  position: relative;
+  max-width: 332px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--primary-content);
+}
+
+.item-link {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* APP */
+.app {
+  position: relative;
+  margin-top: 160px;
+  background: var(--primary-color);
+  border-radius: 24px;
+}
+
+.app .row {
+  align-items: center;
+}
+
+.app__inner {
+  padding: 100px 0;
+  max-width: 435px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__sub-heading,
+.app-heading,
+.app-desc {
+  color: #fff;
+}
+
+.app__sub-heading {
+  display: inline-flex;
+}
+.app__sub-heading::before {
+  background: #fff;
+}
+
+.app-heading {
+  margin-top: 12px;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.app-desc {
+  margin-top: 18px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.app__cta {
+  display: flex;
+  margin-left: 35px;
+  margin-top: 38px;
+  column-gap: 16px;
+}
+
+.app__download {
+  border-radius: 6px;
+  display: inline-block;
+  background: #fff;
+  padding: 18px 31px;
+}
+
+.star {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.star-1 {
+  top: 49px;
+  left: 112px;
+}
+
+.star-4 {
+  top: 49px;
+  right: 112px;
 }
